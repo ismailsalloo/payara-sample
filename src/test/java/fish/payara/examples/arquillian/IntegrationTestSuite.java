@@ -11,6 +11,7 @@ public class IntegrationTestSuite {
     @Deployment
     public static JavaArchive createDeployment() {
         return ShrinkWrap.create(JavaArchive.class)
-                .addClass(HelloWorld.class);
+                .addClass(HelloWorld.class)
+                .addClass(HelloWorld2.class);
     }
 }

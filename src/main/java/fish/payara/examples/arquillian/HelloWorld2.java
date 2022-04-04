@@ -1,13 +1,11 @@
 package fish.payara.examples.arquillian;
 
-import javax.ejb.Stateless;
-import javax.enterprise.context.Dependent;
-import javax.inject.Named;
+import javax.inject.Singleton;
 import org.eclipse.microprofile.faulttolerance.CircuitBreaker;
 import org.eclipse.microprofile.faulttolerance.Fallback;
 
-@Stateless
-public class HelloWorld {
+@Singleton
+public class HelloWorld2 {
 
     @Fallback(fallbackMethod = "fallback")
     @CircuitBreaker
